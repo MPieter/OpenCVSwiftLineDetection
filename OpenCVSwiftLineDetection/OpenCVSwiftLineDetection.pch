@@ -1,0 +1,26 @@
+//
+//  OpenCVSwiftLineDetection.pch
+//  OpenCVSwiftLineDetection
+//
+//  Created by Pieter Meiresone on 15/10/2020.
+//  Copyright © 2020 Pieter Meiresone. All rights reserved.
+//
+
+#ifndef OpenCVSwiftLineDetection_pch
+#define OpenCVSwiftLineDetection_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __cplusplus
+#   include <opencv2/opencv.hpp>
+#   include <opencv2/imgproc.hpp>
+//#   include <opencv2/stitching/detail/blenders.hpp>
+//#   include <opencv2/stitching/detail/exposure_compensate.hpp>
+#else
+#   import <Foundation/Foundation.h>
+#   import <UIKit/UIKit.h>
+#   import <Availability.h>
+#endif
+
+
+#endif /* OpenCVSwiftLineDetection_pch */

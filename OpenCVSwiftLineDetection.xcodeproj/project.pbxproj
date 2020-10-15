@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		921AC9A84F1F3DCDFFE7AC93 /* Pods_OpenCVSwiftLineDetection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558C3E3F7A0186C0AD4707E1 /* Pods_OpenCVSwiftLineDetection.framework */; };
+		F529E1FB2530B7FA00A406C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529E1FA2530B7FA00A406C0 /* AppDelegate.swift */; };
+		F529E1FD2530B7FA00A406C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529E1FC2530B7FA00A406C0 /* SceneDelegate.swift */; };
+		F529E1FF2530B7FA00A406C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529E1FE2530B7FA00A406C0 /* ViewController.swift */; };
+		F529E2022530B7FA00A406C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F529E2002530B7FA00A406C0 /* Main.storyboard */; };
+		F529E2042530B7FE00A406C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F529E2032530B7FE00A406C0 /* Assets.xcassets */; };
+		F529E2072530B7FE00A406C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F529E2052530B7FE00A406C0 /* LaunchScreen.storyboard */; };
+		F529E2122530B7FF00A406C0 /* OpenCVSwiftLineDetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529E2112530B7FF00A406C0 /* OpenCVSwiftLineDetectionTests.swift */; };
+		F529E21D2530B7FF00A406C0 /* OpenCVSwiftLineDetectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F529E21C2530B7FF00A406C0 /* OpenCVSwiftLineDetectionUITests.swift */; };
+		F529E2382530B86C00A406C0 /* lines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F529E2302530B86C00A406C0 /* lines.cpp */; };
+		F529E2392530B86C00A406C0 /* CVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = F529E2332530B86C00A406C0 /* CVWrapper.mm */; };
+		F529E23A2530B86C00A406C0 /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = F529E2342530B86C00A406C0 /* UIImage+Rotate.m */; };
+		F529E23B2530B86C00A406C0 /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = F529E2352530B86C00A406C0 /* UIImage+OpenCV.mm */; };
+		F57A030E2537719B003F88E0 /* dash1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F57A030B2537719A003F88E0 /* dash1.jpg */; };
+		F57A030F2537719B003F88E0 /* dash2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F57A030C2537719B003F88E0 /* dash2.jpg */; };
+		F57A03102537719B003F88E0 /* dash3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F57A030D2537719B003F88E0 /* dash3.jpg */; };
+		F57A03132538C96E003F88E0 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = F57A03122538C96E003F88E0 /* README.markdown */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F529E20E2530B7FF00A406C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F529E1EF2530B7F900A406C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F529E1F62530B7FA00A406C0;
+			remoteInfo = OpenCVSwiftLineDetection;
+		};
+		F529E2192530B7FF00A406C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F529E1EF2530B7F900A406C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F529E1F62530B7FA00A406C0;
+			remoteInfo = OpenCVSwiftLineDetection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F529E22E2530B81A00A406C0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		25F382FC78F1D351965BDD70 /* Pods-OpenCVSwiftLineDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSwiftLineDetection.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSwiftLineDetection/Pods-OpenCVSwiftLineDetection.release.xcconfig"; sourceTree = "<group>"; };
+		558C3E3F7A0186C0AD4707E1 /* Pods_OpenCVSwiftLineDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenCVSwiftLineDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F529E1F72530B7FA00A406C0 /* OpenCVSwiftLineDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVSwiftLineDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F529E1FA2530B7FA00A406C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F529E1FC2530B7FA00A406C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F529E1FE2530B7FA00A406C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F529E2012530B7FA00A406C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F529E2032530B7FE00A406C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F529E2062530B7FE00A406C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F529E2082530B7FE00A406C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F529E20D2530B7FF00A406C0 /* OpenCVSwiftLineDetectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCVSwiftLineDetectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F529E2112530B7FF00A406C0 /* OpenCVSwiftLineDetectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCVSwiftLineDetectionTests.swift; sourceTree = "<group>"; };
+		F529E2132530B7FF00A406C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F529E2182530B7FF00A406C0 /* OpenCVSwiftLineDetectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCVSwiftLineDetectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F529E21C2530B7FF00A406C0 /* OpenCVSwiftLineDetectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCVSwiftLineDetectionUITests.swift; sourceTree = "<group>"; };
+		F529E21E2530B7FF00A406C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F529E22F2530B86B00A406C0 /* OpenCVSwiftLineDetection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCVSwiftLineDetection-Bridging-Header.h"; sourceTree = "<group>"; };
+		F529E2302530B86C00A406C0 /* lines.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lines.cpp; sourceTree = "<group>"; };
+		F529E2312530B86C00A406C0 /* lines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lines.h; sourceTree = "<group>"; };
+		F529E2322530B86C00A406C0 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		F529E2332530B86C00A406C0 /* CVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVWrapper.mm; sourceTree = "<group>"; };
+		F529E2342530B86C00A406C0 /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
+		F529E2352530B86C00A406C0 /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		F529E2362530B86C00A406C0 /* CVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVWrapper.h; sourceTree = "<group>"; };
+		F529E2372530B86C00A406C0 /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
+		F57A030B2537719A003F88E0 /* dash1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dash1.jpg; sourceTree = "<group>"; };
+		F57A030C2537719B003F88E0 /* dash2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dash2.jpg; sourceTree = "<group>"; };
+		F57A030D2537719B003F88E0 /* dash3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dash3.jpg; sourceTree = "<group>"; };
+		F57A031125384C93003F88E0 /* OpenCVSwiftLineDetection.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVSwiftLineDetection.pch; sourceTree = "<group>"; };
+		F57A03122538C96E003F88E0 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		FAA5B70121B37C1FE327C95D /* Pods-OpenCVSwiftLineDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSwiftLineDetection.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSwiftLineDetection/Pods-OpenCVSwiftLineDetection.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F529E1F42530B7FA00A406C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921AC9A84F1F3DCDFFE7AC93 /* Pods_OpenCVSwiftLineDetection.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F529E20A2530B7FF00A406C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F529E2152530B7FF00A406C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4195514C95E761629463F435 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAA5B70121B37C1FE327C95D /* Pods-OpenCVSwiftLineDetection.debug.xcconfig */,
+				25F382FC78F1D351965BDD70 /* Pods-OpenCVSwiftLineDetection.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F529E1EE2530B7F900A406C0 = {
+			isa = PBXGroup;
+			children = (
+				F57A03122538C96E003F88E0 /* README.markdown */,
+				F529E1F92530B7FA00A406C0 /* OpenCVSwiftLineDetection */,
+				F529E2102530B7FF00A406C0 /* OpenCVSwiftLineDetectionTests */,
+				F529E21B2530B7FF00A406C0 /* OpenCVSwiftLineDetectionUITests */,
+				F529E1F82530B7FA00A406C0 /* Products */,
+				F529E22A2530B81900A406C0 /* Frameworks */,
+				4195514C95E761629463F435 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F529E1F82530B7FA00A406C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F529E1F72530B7FA00A406C0 /* OpenCVSwiftLineDetection.app */,
+				F529E20D2530B7FF00A406C0 /* OpenCVSwiftLineDetectionTests.xctest */,
+				F529E2182530B7FF00A406C0 /* OpenCVSwiftLineDetectionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F529E1F92530B7FA00A406C0 /* OpenCVSwiftLineDetection */ = {
+			isa = PBXGroup;
+			children = (
+				F57A030B2537719A003F88E0 /* dash1.jpg */,
+				F57A030C2537719B003F88E0 /* dash2.jpg */,
+				F57A030D2537719B003F88E0 /* dash3.jpg */,
+				F529E2362530B86C00A406C0 /* CVWrapper.h */,
+				F529E2332530B86C00A406C0 /* CVWrapper.mm */,
+				F529E2302530B86C00A406C0 /* lines.cpp */,
+				F529E2312530B86C00A406C0 /* lines.h */,
+				F529E2322530B86C00A406C0 /* UIImage+OpenCV.h */,
+				F529E2352530B86C00A406C0 /* UIImage+OpenCV.mm */,
+				F529E2372530B86C00A406C0 /* UIImage+Rotate.h */,
+				F529E2342530B86C00A406C0 /* UIImage+Rotate.m */,
+				F529E1FA2530B7FA00A406C0 /* AppDelegate.swift */,
+				F529E1FC2530B7FA00A406C0 /* SceneDelegate.swift */,
+				F529E1FE2530B7FA00A406C0 /* ViewController.swift */,
+				F529E2002530B7FA00A406C0 /* Main.storyboard */,
+				F529E2032530B7FE00A406C0 /* Assets.xcassets */,
+				F529E2052530B7FE00A406C0 /* LaunchScreen.storyboard */,
+				F529E2082530B7FE00A406C0 /* Info.plist */,
+				F529E22F2530B86B00A406C0 /* OpenCVSwiftLineDetection-Bridging-Header.h */,
+				F57A031125384C93003F88E0 /* OpenCVSwiftLineDetection.pch */,
+			);
+			path = OpenCVSwiftLineDetection;
+			sourceTree = "<group>";
+		};
+		F529E2102530B7FF00A406C0 /* OpenCVSwiftLineDetectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				F529E2112530B7FF00A406C0 /* OpenCVSwiftLineDetectionTests.swift */,
+				F529E2132530B7FF00A406C0 /* Info.plist */,
+			);
+			path = OpenCVSwiftLineDetectionTests;
+			sourceTree = "<group>";
+		};
+		F529E21B2530B7FF00A406C0 /* OpenCVSwiftLineDetectionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F529E21C2530B7FF00A406C0 /* OpenCVSwiftLineDetectionUITests.swift */,
+				F529E21E2530B7FF00A406C0 /* Info.plist */,
+			);
+			path = OpenCVSwiftLineDetectionUITests;
+			sourceTree = "<group>";
+		};
+		F529E22A2530B81900A406C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				558C3E3F7A0186C0AD4707E1 /* Pods_OpenCVSwiftLineDetection.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F529E1F62530B7FA00A406C0 /* OpenCVSwiftLineDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F529E2212530B7FF00A406C0 /* Build configuration list for PBXNativeTarget "OpenCVSwiftLineDetection" */;
+			buildPhases = (
+				A64A7882FC8B74A3547CFBBB /* [CP] Check Pods Manifest.lock */,
+				F529E1F32530B7FA00A406C0 /* Sources */,
+				F529E1F42530B7FA00A406C0 /* Frameworks */,
+				F529E1F52530B7FA00A406C0 /* Resources */,
+				F529E22E2530B81A00A406C0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCVSwiftLineDetection;
+			productName = OpenCVSwiftLineDetection;
+			productReference = F529E1F72530B7FA00A406C0 /* OpenCVSwiftLineDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F529E20C2530B7FF00A406C0 /* OpenCVSwiftLineDetectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F529E2242530B7FF00A406C0 /* Build configuration list for PBXNativeTarget "OpenCVSwiftLineDetectionTests" */;
+			buildPhases = (
+				F529E2092530B7FF00A406C0 /* Sources */,
+				F529E20A2530B7FF00A406C0 /* Frameworks */,
+				F529E20B2530B7FF00A406C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F529E20F2530B7FF00A406C0 /* PBXTargetDependency */,
+			);
+			name = OpenCVSwiftLineDetectionTests;
+			productName = OpenCVSwiftLineDetectionTests;
+			productReference = F529E20D2530B7FF00A406C0 /* OpenCVSwiftLineDetectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F529E2172530B7FF00A406C0 /* OpenCVSwiftLineDetectionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F529E2272530B7FF00A406C0 /* Build configuration list for PBXNativeTarget "OpenCVSwiftLineDetectionUITests" */;
+			buildPhases = (
+				F529E2142530B7FF00A406C0 /* Sources */,
+				F529E2152530B7FF00A406C0 /* Frameworks */,
+				F529E2162530B7FF00A406C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F529E21A2530B7FF00A406C0 /* PBXTargetDependency */,
+			);
+			name = OpenCVSwiftLineDetectionUITests;
+			productName = OpenCVSwiftLineDetectionUITests;
+			productReference = F529E2182530B7FF00A406C0 /* OpenCVSwiftLineDetectionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F529E1EF2530B7F900A406C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Pieter Meiresone";
+				TargetAttributes = {
+					F529E1F62530B7FA00A406C0 = {
+						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
+					};
+					F529E20C2530B7FF00A406C0 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = F529E1F62530B7FA00A406C0;
+					};
+					F529E2172530B7FF00A406C0 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = F529E1F62530B7FA00A406C0;
+					};
+				};
+			};
+			buildConfigurationList = F529E1F22530B7F900A406C0 /* Build configuration list for PBXProject "OpenCVSwiftLineDetection" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F529E1EE2530B7F900A406C0;
+			productRefGroup = F529E1F82530B7FA00A406C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F529E1F62530B7FA00A406C0 /* OpenCVSwiftLineDetection */,
+				F529E20C2530B7FF00A406C0 /* OpenCVSwiftLineDetectionTests */,
+				F529E2172530B7FF00A406C0 /* OpenCVSwiftLineDetectionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F529E1F52530B7FA00A406C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F529E2072530B7FE00A406C0 /* LaunchScreen.storyboard in Resources */,
+				F57A03102537719B003F88E0 /* dash3.jpg in Resources */,
+				F57A030E2537719B003F88E0 /* dash1.jpg in Resources */,
+				F57A030F2537719B003F88E0 /* dash2.jpg in Resources */,
+				F57A03132538C96E003F88E0 /* README.markdown in Resources */,
+				F529E2042530B7FE00A406C0 /* Assets.xcassets in Resources */,
+				F529E2022530B7FA00A406C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F529E20B2530B7FF00A406C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F529E2162530B7FF00A406C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A64A7882FC8B74A3547CFBBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSwiftLineDetection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F529E1F32530B7FA00A406C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F529E1FF2530B7FA00A406C0 /* ViewController.swift in Sources */,
+				F529E2392530B86C00A406C0 /* CVWrapper.mm in Sources */,
+				F529E23A2530B86C00A406C0 /* UIImage+Rotate.m in Sources */,
+				F529E1FB2530B7FA00A406C0 /* AppDelegate.swift in Sources */,
+				F529E23B2530B86C00A406C0 /* UIImage+OpenCV.mm in Sources */,
+				F529E1FD2530B7FA00A406C0 /* SceneDelegate.swift in Sources */,
+				F529E2382530B86C00A406C0 /* lines.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F529E2092530B7FF00A406C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F529E2122530B7FF00A406C0 /* OpenCVSwiftLineDetectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F529E2142530B7FF00A406C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F529E21D2530B7FF00A406C0 /* OpenCVSwiftLineDetectionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F529E20F2530B7FF00A406C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F529E1F62530B7FA00A406C0 /* OpenCVSwiftLineDetection */;
+			targetProxy = F529E20E2530B7FF00A406C0 /* PBXContainerItemProxy */;
+		};
+		F529E21A2530B7FF00A406C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F529E1F62530B7FA00A406C0 /* OpenCVSwiftLineDetection */;
+			targetProxy = F529E2192530B7FF00A406C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F529E2002530B7FA00A406C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F529E2012530B7FA00A406C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F529E2052530B7FE00A406C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F529E2062530B7FE00A406C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F529E21F2530B7FF00A406C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F529E2202530B7FF00A406C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F529E2222530B7FF00A406C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAA5B70121B37C1FE327C95D /* Pods-OpenCVSwiftLineDetection.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6R9S32MNR2;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+				GCC_PREFIX_HEADER = OpenCVSwiftLineDetection/OpenCVSwiftLineDetection.pch;
+				INFOPLIST_FILE = OpenCVSwiftLineDetection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pm.OpenCVSwiftLineDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCVSwiftLineDetection/OpenCVSwiftLineDetection-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F529E2232530B7FF00A406C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25F382FC78F1D351965BDD70 /* Pods-OpenCVSwiftLineDetection.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6R9S32MNR2;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+				GCC_PREFIX_HEADER = OpenCVSwiftLineDetection/OpenCVSwiftLineDetection.pch;
+				INFOPLIST_FILE = OpenCVSwiftLineDetection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pm.OpenCVSwiftLineDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCVSwiftLineDetection/OpenCVSwiftLineDetection-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F529E2252530B7FF00A406C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OpenCVSwiftLineDetectionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pm.OpenCVSwiftLineDetectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSwiftLineDetection.app/OpenCVSwiftLineDetection";
+			};
+			name = Debug;
+		};
+		F529E2262530B7FF00A406C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OpenCVSwiftLineDetectionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pm.OpenCVSwiftLineDetectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSwiftLineDetection.app/OpenCVSwiftLineDetection";
+			};
+			name = Release;
+		};
+		F529E2282530B7FF00A406C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OpenCVSwiftLineDetectionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pm.OpenCVSwiftLineDetectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenCVSwiftLineDetection;
+			};
+			name = Debug;
+		};
+		F529E2292530B7FF00A406C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OpenCVSwiftLineDetectionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pm.OpenCVSwiftLineDetectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenCVSwiftLineDetection;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F529E1F22530B7F900A406C0 /* Build configuration list for PBXProject "OpenCVSwiftLineDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F529E21F2530B7FF00A406C0 /* Debug */,
+				F529E2202530B7FF00A406C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F529E2212530B7FF00A406C0 /* Build configuration list for PBXNativeTarget "OpenCVSwiftLineDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F529E2222530B7FF00A406C0 /* Debug */,
+				F529E2232530B7FF00A406C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F529E2242530B7FF00A406C0 /* Build configuration list for PBXNativeTarget "OpenCVSwiftLineDetectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F529E2252530B7FF00A406C0 /* Debug */,
+				F529E2262530B7FF00A406C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F529E2272530B7FF00A406C0 /* Build configuration list for PBXNativeTarget "OpenCVSwiftLineDetectionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F529E2282530B7FF00A406C0 /* Debug */,
+				F529E2292530B7FF00A406C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F529E1EF2530B7F900A406C0 /* Project object */;
+}

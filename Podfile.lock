@@ -1,0 +1,16 @@
+PODS:
+  - OpenCV (4.1.0)
+
+DEPENDENCIES:
+  - OpenCV (~> 4.1.0)
+
+SPEC REPOS:
+  trunk:
+    - OpenCV
+
+SPEC CHECKSUMS:
+  OpenCV: 52cd4d72ff29e2be83421477aec5447320b7fb19
+
+PODFILE CHECKSUM: 98bcbae7db8137e802fa75d134b8eec53a0b98ad
+
+COCOAPODS: 1.9.3
